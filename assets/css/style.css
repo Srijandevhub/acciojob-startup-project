@@ -1,0 +1,210 @@
+:root {
+    --yellow-color: #FCAF02;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    background-color: #000000;
+}
+.container {
+    max-width: 1612px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--yellow-color);
+    z-index: 10;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-brand {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.navbar-brand span {
+    text-decoration: underline;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar-menu li a {
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 28px;
+    line-height: 86px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+.navbar-menu li:last-child a {
+    padding-right: 0px;
+}
+.navbar-menu li a:hover {
+    color: #fff;
+}
+.hero-section {
+    padding: 174px 0 58px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-col1, .hero-col2, .col-12, .col-auto, .col-6 {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+.col-12 {
+    width: 100%;
+}
+.col-6 {
+    width: 50%;
+}
+.hero-col1 {
+    width: 58%;
+}
+.hero-col2 {
+    width: 42%;
+}
+.heading {
+    margin-top: 0px;
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 33px;
+}
+p {
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.hero-col2 img {
+    width: 100%;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 113px 14px;
+    min-width: 323px;
+    border-radius: 60px;
+    min-height: 66px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: var(--yellow-color);
+    border-color: var(--yellow-color);
+}
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--yellow-color);
+}
+.text-yellow {
+    color: var(--yellow-color);
+}
+.contactus-section {
+    padding: 58px 0;
+}
+.pr {
+    padding-right: 37px;
+}
+.pl {
+    padding-left: 37px;
+}
+.form-control {
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--yellow-color);
+    border-radius: 100px;
+    padding: 0 58px;
+    background-color: transparent;
+    color: var(--yellow-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    height: 82px;
+    margin-bottom: 50px;
+    opacity: 1;
+}
+.form-control::placeholder {
+    opacity: 1;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.btn-submit {
+    min-width: 325px;
+    min-height: 82px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.table-section {
+    padding: 58px 0 120px;
+}
+.table {
+    border-collapse: collapse;
+    border-left: 2px solid var(--yellow-color);
+    border-bottom: 2px solid var(--yellow-color);
+    border-top: 2px solid var(--yellow-color);
+    width: 100%;
+}
+.table th {
+    border-right: 2px solid var(--yellow-color);
+    border-bottom: 2px solid var(--yellow-color);
+    padding: 30px 49px;
+    color: var(--yellow-color);
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+}
+.table tbody td {
+    padding: 30px 49px;
+    color: var(--yellow-color);
+    font-weight: 400;
+    border-right: 2px solid var(--yellow-color);
+}
+.table tfoot tr {
+    background-color: var(--yellow-color);
+}
+.table tfoot td {
+    border-right: 2px solid #000;
+    padding: 24px 49px;
+    color: #000;
+    font-size: 28px;
+}
+.table tfoot tr td:last-child {
+    border-color: var(--yellow-color);
+}
